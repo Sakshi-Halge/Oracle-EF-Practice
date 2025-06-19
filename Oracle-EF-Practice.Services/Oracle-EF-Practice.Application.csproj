@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Oracle_EF_Practice.Repositories</RootNamespace>
+    <RootNamespace>Oracle_EF_Practice.Services</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Oracle-EF-Practice.Models\Oracle-EF-Practice.Models.csproj" />
+    <ProjectReference Include="..\Oracle-EF-Practice.Models\Oracle-EF-Practice.Domain.csproj" />
   </ItemGroup>
 
 </Project>

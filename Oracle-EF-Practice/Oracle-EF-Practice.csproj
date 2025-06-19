@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Oracle-EF-Practice.Services\Oracle-EF-Practice.Services.csproj" />
+    <ProjectReference Include="..\Oracle-EF-Practice.Services\Oracle-EF-Practice.Application.csproj" />
   </ItemGroup>
 
 </Project>

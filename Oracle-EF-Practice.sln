@@ -5,11 +5,11 @@ VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice", "Oracle-EF-Practice\Oracle-EF-Practice.csproj", "{E30537F6-E2A1-45CF-A4BE-1255566AF8BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Services", "Oracle-EF-Practice.Services\Oracle-EF-Practice.Services.csproj", "{793BD891-83E3-45E3-B74F-A532097AB450}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Application", "Oracle-EF-Practice.Services\Oracle-EF-Practice.Application.csproj", "{793BD891-83E3-45E3-B74F-A532097AB450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Models", "Oracle-EF-Practice.Models\Oracle-EF-Practice.Models.csproj", "{D4EEA72B-AC6E-4466-AB00-FF298D66DDB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Domain", "Oracle-EF-Practice.Models\Oracle-EF-Practice.Domain.csproj", "{D4EEA72B-AC6E-4466-AB00-FF298D66DDB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Repositories", "Oracle-EF-Practice.Repositories\Oracle-EF-Practice.Repositories.csproj", "{00366313-BD93-497D-8D77-36746232CB6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle-EF-Practice.Infrastructure", "Oracle-EF-Practice.Repositories\Oracle-EF-Practice.Infrastructure.csproj", "{00366313-BD93-497D-8D77-36746232CB6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
