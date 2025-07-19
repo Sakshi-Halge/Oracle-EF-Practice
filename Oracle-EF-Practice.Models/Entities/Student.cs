@@ -27,6 +27,6 @@ namespace Oracle_EF_Practice.Models.Entities
         [Column("EnrollmentDate")]
         public DateTime EnrollmentDate { get; set; }
 
-        public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+        //public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }

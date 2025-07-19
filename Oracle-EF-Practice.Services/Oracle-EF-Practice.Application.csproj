@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Oracle-EF-Practice.Models\Oracle-EF-Practice.Domain.csproj" />
+    <ProjectReference Include="..\Oracle-EF-Practice.Repositories\Oracle-EF-Practice.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

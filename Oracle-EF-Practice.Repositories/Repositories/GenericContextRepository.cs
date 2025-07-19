@@ -57,5 +57,10 @@ namespace Oracle_EF_Practice.Repositories.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _appDbContext.SaveChangesAsync();
+        }
     }
 }

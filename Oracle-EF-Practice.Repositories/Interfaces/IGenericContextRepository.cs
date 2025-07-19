@@ -17,5 +17,8 @@ namespace Oracle_EF_Practice.Repositories.Interfaces
         Task UpdateAsync(T entity);
         Task DeleteAsync(T entity);
         Task DeleteRangeAsync(IEnumerable<T> entities);
+        Task<int> SaveChangesAsync();
+
+
     }
 }
