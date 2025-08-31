@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Oracle_EF_Practice.Models.Entities;
-using Oracle_EF_Practice.Services.Interfaces;
+using Oracle_EF_Practice.Application.Interfaces;
+using Oracle_EF_Practice.Domain.Entities;
 
 namespace Oracle_EF_Practice.Controllers
 {

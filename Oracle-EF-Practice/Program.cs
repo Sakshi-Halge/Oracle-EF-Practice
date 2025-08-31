@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using Oracle_EF_Practice.Repositories.DBContext;
-using Oracle_EF_Practice.Repositories.Interfaces;
-using Oracle_EF_Practice.Repositories.Repositories;
-using Oracle_EF_Practice.Services.Interfaces;
-using Oracle_EF_Practice.Services.Services;
+using Oracle_EF_Practice.Infrastructure.DBContext;
+using Oracle_EF_Practice.Infrastructure.Interfaces;
+using Oracle_EF_Practice.Infrastructure.Repositories;
+using Oracle_EF_Practice.Application.Interfaces;
+using Oracle_EF_Practice.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

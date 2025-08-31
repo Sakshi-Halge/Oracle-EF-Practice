@@ -1,13 +1,13 @@
-﻿using Oracle_EF_Practice.Models.Entities;
-using Oracle_EF_Practice.Repositories.Interfaces;
-using Oracle_EF_Practice.Services.Interfaces;
+﻿using Oracle_EF_Practice.Domain.Entities;
+using Oracle_EF_Practice.Infrastructure.Interfaces;
+using Oracle_EF_Practice.Application.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oracle_EF_Practice.Services.Services
+namespace Oracle_EF_Practice.Application.Services
 {
     public class StudentService : IStudentService
     {

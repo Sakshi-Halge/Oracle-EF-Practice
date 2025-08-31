@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oracle_EF_Practice.Models.Entities
+namespace Oracle_EF_Practice.Domain.Entities
 {
     [Table("Course")]
     public class Course

@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oracle_EF_Practice.Repositories.Interfaces
+namespace Oracle_EF_Practice.Infrastructure.Interfaces
 {
     public interface IGenericContextRepository<T> where T : class
     {

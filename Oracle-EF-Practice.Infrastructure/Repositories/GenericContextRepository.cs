@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Oracle_EF_Practice.Repositories.DBContext;
-using Oracle_EF_Practice.Repositories.Interfaces;
+using Oracle_EF_Practice.Infrastructure.DBContext;
+using Oracle_EF_Practice.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oracle_EF_Practice.Repositories.Repositories
+namespace Oracle_EF_Practice.Infrastructure.Repositories
 {
     public class GenericContextRepository<T> : IGenericContextRepository<T> where T : class
     {

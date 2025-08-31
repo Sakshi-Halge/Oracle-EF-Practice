@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Oracle-EF-Practice.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oracle-EF-Practice.Domain\Oracle-EF-Practice.Domain.csproj" />
+    <ProjectReference Include="..\Oracle-EF-Practice.Infrastructure\Oracle-EF-Practice.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
