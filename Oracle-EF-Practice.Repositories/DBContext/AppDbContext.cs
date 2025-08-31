@@ -20,24 +20,8 @@ namespace Oracle_EF_Practice.Repositories.DBContext
                 // Attempt to open connection
                 Database.OpenConnection();
 
-                // --- CRITICAL VERIFICATION QUERIES ---
-                // Cast to OracleConnection to access provider-specific features if needed,
-                // but simple ExecuteScalar should work for standard SQL.
-                var connection = Database.GetDbConnection();
-
-                using (var command = connection.CreateCommand())
-                {
-                    command.CommandText = "SELECT USER FROM DUAL";
-                    string connectedUser = command.ExecuteScalar()?.ToString();
-                    _logger.LogInformation("Connected user from ASP.NET: {ConnectedUser}", connectedUser);
-
-                    command.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CON_NAME') FROM DUAL";
-                    string pdbName = command.ExecuteScalar()?.ToString();
-                    _logger.LogInformation("Connected PDB from ASP.NET: {PDBName}", pdbName);
-                }
-                // --- END CRITICAL VERIFICATION QUERIES ---
-
                 _logger.LogInformation("Successfully connected to Oracle Database (from AppDbContext).");
+
                 Database.CloseConnection();
             }
             catch (Oracle.ManagedDataAccess.Client.OracleException ex)
@@ -53,24 +37,12 @@ namespace Oracle_EF_Practice.Repositories.DBContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Student>().ToTable("STUDENT", schema: "SYSTEM");
-            modelBuilder.Entity<Student>(entity =>
-            {
-                entity.ToTable("STUDENT", "SYSTEM"); // Ensure table mapping is consistent here
-
-                // Map properties to their exact column names in the database
-                entity.Property(s => s.StudentId).HasColumnName("STUDENTID"); // Assuming StudentId is primary key
-                entity.Property(s => s.FirstName).HasColumnName("FIRSTNAME");
-                entity.Property(s => s.LastName).HasColumnName("LASTNAME");
-                entity.Property(s => s.Email).HasColumnName("EMAIL");
-                entity.Property(s => s.EnrollmentDate).HasColumnName("ENROLLMENTDATE");
-                // Add all other properties of Student here
-            });
+           
             //modelBuilder.Entity<CourseInstructor>().HasNoKey();
 
         }
 
-        public DbSet<Student> Student { get; set; }
+        public DbSet<STUDENT> STUDENT { get; set; }
 
         //public DbSet<Course> Courses { get; set; }
 

@@ -12,16 +12,16 @@ namespace Oracle_EF_Practice.Repositories.Repositories
     public class StudentRepository : IStudentRepository
     {
         private readonly AppDbContext _appDbContext;
-        private readonly IGenericContextRepository<Student> _studentContextRepository;
+        private readonly IGenericContextRepository<STUDENT> _studentContextRepository;
 
-        public StudentRepository(AppDbContext appDbContext, IGenericContextRepository<Student> studentContextRepository)
+        public StudentRepository(AppDbContext appDbContext, IGenericContextRepository<STUDENT> studentContextRepository)
         {
             _appDbContext = appDbContext;
             _studentContextRepository = studentContextRepository;
         }
 
 
-        public async Task<IEnumerable<Student>> GetAllStudentsAsync()
+        public async Task<IEnumerable<STUDENT>> GetAllStudentsAsync()
         {
            return await _studentContextRepository.GetAllAsync();
         }

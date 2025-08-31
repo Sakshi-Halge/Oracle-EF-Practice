@@ -9,6 +9,6 @@ namespace Oracle_EF_Practice.Services.Interfaces
 {
     public interface IStudentService
     {
-        Task<IEnumerable<Student>> GetAllStudentsAsync();
+        Task<IEnumerable<STUDENT>> GetAllStudentsAsync();
     }
 }

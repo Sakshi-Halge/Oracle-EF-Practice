@@ -27,7 +27,7 @@ namespace Oracle_EF_Practice.Models.Entities
         [Column("EnrollmentDate")]
         public DateTime EnrollmentDate { get; set; }
 
-        public virtual Student Student { get; set; }
+        public virtual STUDENT STUDENT { get; set; }
 
         public virtual Course Course { get; set; }
     }

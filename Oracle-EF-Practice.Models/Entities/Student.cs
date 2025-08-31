@@ -8,24 +8,24 @@ using System.Threading.Tasks;
 
 namespace Oracle_EF_Practice.Models.Entities
 {
-    [Table("Student")]
-    public class Student
+    [Table("STUDENT")]
+    public class STUDENT
     {
         [Key]
-        [Column("StudentId")]
-        public int StudentId { get; set; }
+        [Column("STUDENTID")]
+        public int STUDENTID { get; set; }
 
-        [Column("FirstName")]
-        public string FirstName { get; set; }
+        [Column("FIRSTNAME")]
+        public string FIRSTNAME { get; set; }
 
-        [Column("LastName")]
-        public string LastName { get; set; }
+        [Column("LASTNAME")]
+        public string LASTNAME { get; set; }
 
-        [Column("Email")]
-        public string Email { get; set; }
+        [Column("EMAIL")]
+        public string EMAIL { get; set; }
 
-        [Column("EnrollmentDate")]
-        public DateTime EnrollmentDate { get; set; }
+        [Column("ENROLLMENTDATE")]
+        public DateTime ENROLLMENTDATE { get; set; }
 
         //public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
