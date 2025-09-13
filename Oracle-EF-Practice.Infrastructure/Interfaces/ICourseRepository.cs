@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oracle_EF_Practice.Application.Interfaces
+namespace Oracle_EF_Practice.Infrastructure.Interfaces
 {
-    public interface IStudentService
+    public interface ICourseRepository
     {
-        Task<IEnumerable<Student>> GetAllStudentsAsync();
+        Task<IEnumerable<Course>> GetAllCoursesAsync(); 
     }
 }

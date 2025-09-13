@@ -1,14 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Oracle_EF_Practice.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Oracle_EF_Practice.Infrastructure.DBContext
-{
+{ 
     public class AppDbContext : DbContext
     {
         private readonly ILogger<AppDbContext> _logger;
@@ -42,9 +37,9 @@ namespace Oracle_EF_Practice.Infrastructure.DBContext
 
         }
 
-        public DbSet<STUDENT> STUDENT { get; set; }
+        public DbSet<Student> Student { get; set; }
 
-        //public DbSet<Course> Courses { get; set; }
+        public DbSet<Course> Course { get; set; }
 
         //public DbSet<Enrollment> Enrollments { get; set; }
 

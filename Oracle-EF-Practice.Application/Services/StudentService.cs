@@ -17,7 +17,7 @@ namespace Oracle_EF_Practice.Application.Services
         {
             _studentRepository = studentRepository;
         }
-        public async Task<IEnumerable<STUDENT>> GetAllStudentsAsync()
+        public async Task<IEnumerable<Student>> GetAllStudentsAsync()
         {
             return await _studentRepository.GetAllStudentsAsync();
         }

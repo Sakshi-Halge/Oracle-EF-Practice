@@ -8,27 +8,27 @@ using System.Threading.Tasks;
 
 namespace Oracle_EF_Practice.Domain.Entities
 {
-    [Table("Course")]
+    [Table("COURSE")]
     public class Course
     {
         [Key]
-        [Column("CourseId")]
+        [Column("COURSEID")]
         public int CourseId { get; set; }
 
-        [Column("Title")]
+        [Column("TITLE")]
         public string Title { get; set; }
 
-        [Column("Description")]
+        [Column("DESCRIPTION")]
         public string Description { get; set; }
 
-        [Column("Credits")]
+        [Column("CREDITS")]
         public double Credits { get; set; }
 
-        [Column("Maxstudents")]
+        [Column("MAXSTUDENTS")]
         public int MaxStudents { get; set; }
 
-        public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+        //public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 
-        public virtual ICollection<CourseInstructor> CourseInstructors { get; set; } = new List<CourseInstructor>();
+        //public virtual ICollection<CourseInstructor> CourseInstructors { get; set; } = new List<CourseInstructor>();
     }
 }

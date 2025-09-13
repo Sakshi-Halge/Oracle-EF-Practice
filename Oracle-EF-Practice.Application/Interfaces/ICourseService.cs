@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Oracle_EF_Practice.Application.Interfaces
 {
-    public interface IStudentService
+    public interface ICourseService
     {
-        Task<IEnumerable<Student>> GetAllStudentsAsync();
+        Task<IEnumerable<Course>> GetAllCoursesAsync();
     }
 }

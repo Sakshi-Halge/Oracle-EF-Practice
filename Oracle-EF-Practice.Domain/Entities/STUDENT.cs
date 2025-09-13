@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 namespace Oracle_EF_Practice.Domain.Entities
 {
     [Table("STUDENT")]
-    public class STUDENT
+    public class Student
     {
         [Key]
         [Column("STUDENTID")]
-        public int STUDENTID { get; set; }
+        public int StudentID { get; set; }
 
         [Column("FIRSTNAME")]
-        public string FIRSTNAME { get; set; }
+        public string FirstName { get; set; }
 
         [Column("LASTNAME")]
         public string LASTNAME { get; set; }

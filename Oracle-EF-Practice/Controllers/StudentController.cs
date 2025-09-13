@@ -17,7 +17,7 @@ namespace Oracle_EF_Practice.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<STUDENT>>> GetAppStudents()
+        public async Task<ActionResult<IEnumerable<Student>>> GetAppStudents()
         {
             var students = await _studentService.GetAllStudentsAsync();
             return Ok(students);
